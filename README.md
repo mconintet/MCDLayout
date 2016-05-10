@@ -34,3 +34,17 @@ view2.top.eq(view1.top)
 ```
 
 Also this project is very light - only use few classes to imitate 9.0 APIs. 
+
+## Install
+
+Append this line into your `Cartfile`:
+
+```
+github "mconintet/MCDLayout" "master"
+```
+
+then update carthage using:
+
+```
+carthage update --platform iOS
+```
