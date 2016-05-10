@@ -224,7 +224,7 @@ public class MCDLayoutDimension: MCDLayoutAnchor {
 }
 
 @available(iOS 8.0, *)
-extension NSLayoutConstraint {
+public extension NSLayoutConstraint {
     public func active(active: Bool) -> NSLayoutConstraint {
         let left = self.firstItem as! UIView
         left.translatesAutoresizingMaskIntoConstraints = false
@@ -239,7 +239,7 @@ extension NSLayoutConstraint {
 }
 
 @available(iOS 8.0, *)
-extension UIView {
+public extension UIView {
     public var top: MCDLayoutYAxisAnchor {
         get {
             return MCDLayoutYAxisAnchor(item: self, attribute: .Top)
